@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import iOSWidgets
 
 class ViewController: UIViewController, TTBBaseBlueDesign {
 
