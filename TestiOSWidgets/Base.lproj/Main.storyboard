@@ -242,9 +242,9 @@ Look how you like me now&gt;&gt;&gt;&gt;</string>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Your TMB Account"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="This is optional"/>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="android"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="px_close"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="helpingText" value="*This field is required"/>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="actionIcon" value="03_large_36_px_product_all_free"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="actionIcon" value="Placeholder"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPx-42-M1L" customClass="PrimaryTextView" customModule="iOSWidgets">
@@ -609,13 +609,12 @@ Look how you like me now&gt;&gt;&gt;&gt;</string>
     <resources>
         <image name="01Small16PxAlert" width="16" height="16"/>
         <image name="01Small16PxPlaceholder" width="16" height="16"/>
-        <image name="03_large_36_px_product_all_free" width="60" height="60"/>
         <image name="ChevronDown" width="24" height="24"/>
         <image name="ChevronUp" width="24" height="24"/>
         <image name="Placeholder" width="24" height="24"/>
-        <image name="android" width="54" height="54"/>
         <image name="camera" catalog="system" width="128" height="94"/>
         <image name="eye" width="36" height="36"/>
+        <image name="px_close" width="36" height="36"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
