@@ -16,6 +16,7 @@
 		96951F3426025A3100A9E78F /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 96951F3326025A3100A9E78F /* SkeletonView */; };
 		96C834B826025B8900703319 /* TextFieldsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C834B726025B8900703319 /* TextFieldsVC.swift */; };
 		96C8351126025C6000703319 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 96C8351026025C6000703319 /* SDWebImage */; };
+		AF29663D2608B8D800ED7198 /* PillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29663C2608B8D800ED7198 /* PillsViewController.swift */; };
 		AF92946D26030FC800DB453F /* source in Resources */ = {isa = PBXBuildFile; fileRef = AF92946C26030FC800DB453F /* source */; };
 		AF9294762603159A00DB453F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF9294752603159A00DB453F /* IQKeyboardManagerSwift */; };
 		AF92947926031BE800DB453F /* iOSWidgets in Frameworks */ = {isa = PBXBuildFile; productRef = AF92947826031BE800DB453F /* iOSWidgets */; };
@@ -31,6 +32,7 @@
 		96951EB72602597200A9E78F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96951EB92602597200A9E78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96C834B726025B8900703319 /* TextFieldsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsVC.swift; sourceTree = "<group>"; };
+		AF29663C2608B8D800ED7198 /* PillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillsViewController.swift; sourceTree = "<group>"; };
 		AF92946C26030FC800DB453F /* source */ = {isa = PBXFileReference; lastKnownFileType = folder; path = source; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 				96951EAD2602597100A9E78F /* SceneDelegate.swift */,
 				96951EAF2602597100A9E78F /* ViewController.swift */,
 				96C834B726025B8900703319 /* TextFieldsVC.swift */,
+				AF29663C2608B8D800ED7198 /* PillsViewController.swift */,
 				96951EB12602597100A9E78F /* Main.storyboard */,
 				96951EB42602597200A9E78F /* Assets.xcassets */,
 				96951EB62602597200A9E78F /* LaunchScreen.storyboard */,
@@ -174,6 +177,7 @@
 				96951EB02602597100A9E78F /* ViewController.swift in Sources */,
 				96951EAC2602597100A9E78F /* AppDelegate.swift in Sources */,
 				96C834B826025B8900703319 /* TextFieldsVC.swift in Sources */,
+				AF29663D2608B8D800ED7198 /* PillsViewController.swift in Sources */,
 				96951EAE2602597100A9E78F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2U44HW5B4A;
 				INFOPLIST_FILE = TestiOSWidgets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2U44HW5B4A;
 				INFOPLIST_FILE = TestiOSWidgets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
