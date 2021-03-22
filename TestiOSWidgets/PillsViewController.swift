@@ -54,7 +54,7 @@ extension PillsViewController: PrimaryPillCategorySourceProtocol {
         ///
     }
     func sizeForItem(source: Pills, at index: Int) -> CGSize? {
-        source == categoryPills ? CGSize(width: 120, height: 120) : nil
+        source == categoryPills ? CGSize(width: 85, height: 44) : nil
     }
     
 }

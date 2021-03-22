@@ -15,7 +15,6 @@ class TextFieldsVC: UIViewController, TTBBaseWhiteDesign {
     @IBOutlet var textFields: [PrimaryTextField]!
     @IBOutlet var textViews: [PrimaryTextView]!
     
-    @IBOutlet var textViews: [PrimaryTextView]!
     var textFieldAction: ((UITextField) -> Void)? = { textField in
         if let tf = textField as? PrimaryTextField {
             tf.helpingText = "Hooo ley!!!"
