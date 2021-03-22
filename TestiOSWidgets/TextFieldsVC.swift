@@ -13,6 +13,7 @@ import iOSWidgets
 class TextFieldsVC: UIViewController, TTBBaseWhiteDesign {
     
     @IBOutlet var textFields: [PrimaryTextField]!
+    @IBOutlet var textViews: [PrimaryTextView]!
     
     var textFieldAction: ((UITextField) -> Void)? = { textField in
         if let tf = textField as? PrimaryTextField {
@@ -44,6 +45,8 @@ class TextFieldsVC: UIViewController, TTBBaseWhiteDesign {
     }
     
     @objc func dismissKeyboard(){
+        let tv = self.textViews[1] as PrimaryTextView
+        tv.text = "Hello\nIt's me\n ***"
         view.endEditing(true)
     }
 }
