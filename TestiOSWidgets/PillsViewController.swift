@@ -11,6 +11,7 @@ import iOSWidgets
 
 class PillsViewController: UIViewController, TTBBaseBlueDesign {
     
+    @IBOutlet weak var accountCards: AccountCardsView!
     @IBOutlet weak var categoryPills: PrimaryPillCategory!
     @IBOutlet weak var dynamicTextPills: PrimaryPillCategory!
     
@@ -22,12 +23,17 @@ class PillsViewController: UIViewController, TTBBaseBlueDesign {
         dynamicTextPills.source = self
         categoryPills.deselectable = false
         categoryPills.font = UIFont.h3NavyLeft!
+        
+        self.accountCards.datasource = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         categoryPills.reloadItems()
         dynamicTextPills.reloadItems()
+        self.accountCards.reloadCards {
+            //
+        }
     }
 }
 
@@ -56,5 +62,37 @@ extension PillsViewController: PrimaryPillCategorySourceProtocol {
     func sizeForItem(source: Pills, at index: Int) -> CGSize? {
         source == categoryPills ? CGSize(width: 85, height: 44) : nil
     }
+    
+}
+
+extension PillsViewController: PrimaryAccountCardViewsProtocol {
+    func createCardViews(_ controller: V?) -> [T]? {
+        guard let pathURL = Bundle.main.url(forResource: "FetchAccountList", withExtension: "json") else {
+            return []
+        }
+        do {
+            let rawData = try Data(contentsOf: pathURL)
+            let decode = JSONDecoder()
+            decode.keyDecodingStrategy = .convertFromSnakeCase
+            let response = try decode.decode(AccountItemsResponse.self, from: rawData)
+            return response.data?.compactMap { DisplayAccountItems(with: $0) } ?? []
+        } catch {
+            print(error)
+            return []
+        }
+    }
+    
+    func cardDidSelected(_ vc: V, item: T, at index: Int) {
+        ///
+    }
+    
+    func controller() -> V? {
+        self
+    }
+    
+    func dismiss(_ controller: V?) {
+        ///
+    }
+    
     
 }
