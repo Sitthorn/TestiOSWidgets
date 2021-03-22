@@ -308,9 +308,11 @@ Look how you like me now&gt;&gt;&gt;&gt;</string>
                     </view>
                     <navigationItem key="navigationItem" title="TextFields" id="X91-pK-rkY"/>
                     <connections>
-                        <outletCollection property="textFields" destination="kY8-H0-eCt" collectionClass="NSMutableArray" id="bfJ-U9-u6G"/>
-                        <outletCollection property="textFields" destination="wAA-55-ufm" collectionClass="NSMutableArray" id="8wQ-nG-kdS"/>
-                        <outletCollection property="textFields" destination="L65-Y2-ydZ" collectionClass="NSMutableArray" id="r4x-PM-M13"/>
+                        <outletCollection property="textFields" destination="wAA-55-ufm" collectionClass="NSMutableArray" id="mYh-sX-urD"/>
+                        <outletCollection property="textFields" destination="kY8-H0-eCt" collectionClass="NSMutableArray" id="gHc-bi-dq1"/>
+                        <outletCollection property="textFields" destination="L65-Y2-ydZ" collectionClass="NSMutableArray" id="WtX-ZB-PvM"/>
+                        <outletCollection property="textViews" destination="eME-cu-qVn" collectionClass="NSMutableArray" id="F8X-6o-VE9"/>
+                        <outletCollection property="textViews" destination="cPx-42-M1L" collectionClass="NSMutableArray" id="v02-u4-hE8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yh-fv-vXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

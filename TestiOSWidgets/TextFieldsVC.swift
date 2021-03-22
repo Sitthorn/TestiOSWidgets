@@ -2,7 +2,7 @@
 //  TextFieldsVC.swift
 //  ComponentTest
 //
-//  Created by ONEAPP-IT4IT on 19/2/2564 BE.
+//  Created by Sitthorn Ch on 19/2/2564 BE.
 //
 
 import Foundation
@@ -14,6 +14,7 @@ class TextFieldsVC: UIViewController, TTBBaseWhiteDesign {
     
     @IBOutlet var textFields: [PrimaryTextField]!
     
+    @IBOutlet var textViews: [PrimaryTextView]!
     var textFieldAction: ((UITextField) -> Void)? = { textField in
         if let tf = textField as? PrimaryTextField {
             tf.helpingText = "Hooo ley!!!"
@@ -29,17 +30,27 @@ class TextFieldsVC: UIViewController, TTBBaseWhiteDesign {
         tapGesture.cancelsTouchesInView = true
         view.addGestureRecognizer(tapGesture)
         
-       textFields[2].action = textFieldAction
+        textFields[2].action = textFieldAction
         
         setupLayout()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        textFields.last?.font = .specialH1ForAccountSummaryPageWhiteRight
+        
+    }
+    
     @IBAction func enableHandler(_ sender: UISegmentedControl) {
-        let enable = (sender.selectedSegmentIndex != 1)
+        let enable = (sender.selectedSegmentIndex == 1).revert
         let error = (sender.selectedSegmentIndex == 2) ? TestError.mismatch : nil
         for tf in textFields {
             tf.isEnabled = enable
             tf.error = error
+        }
+        for tv in textViews {
+            tv.isEnabled = enable
+            tv.error = error
         }
     }
     
