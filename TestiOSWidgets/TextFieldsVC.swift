@@ -30,20 +30,21 @@ class TextFieldsVC: UIViewController, TTBBaseWhiteDesign {
         tapGesture.cancelsTouchesInView = true
         view.addGestureRecognizer(tapGesture)
         
-        textFields[2].action = textFieldAction
+//        textFields[2].action = textFieldAction
         
         setupLayout()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        textFields.last?.font = .specialH1ForAccountSummaryPageWhiteRight
+//        textFields.last?.font = .specialH1ForAccountSummaryPageWhiteRight
         
     }
     
     @IBAction func enableHandler(_ sender: UISegmentedControl) {
         let enable = (sender.selectedSegmentIndex == 1).revert
         let error = (sender.selectedSegmentIndex == 2) ? TestError.mismatch : nil
+        
         for tf in textFields {
             tf.isEnabled = enable
             tf.error = error
@@ -55,8 +56,8 @@ class TextFieldsVC: UIViewController, TTBBaseWhiteDesign {
     }
     
     @objc func dismissKeyboard(){
-        let tv = self.textViews[1] as PrimaryTextView
-        tv.text = "Hello\nIt's me\n ***"
+//        let tv = self.textViews[1] as PrimaryTextView
+//        tv.text = "Hello\nIt's me\n ***"
         view.endEditing(true)
     }
 }
