@@ -233,12 +233,11 @@ Look how you like me now&gt;&gt;&gt;&gt;</string>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Title of TextField"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="helpingText" value="*xoxoxo"/>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="icon" value="Placeholder"/>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="actionIcon" value="eye"/>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enableInputAccessory" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHiddenWhenSkeletonIsActive" value="NO"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="descriptionText" value="thb"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="descriptionText" value="*xoxoxo"/>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="countingCharacter" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
