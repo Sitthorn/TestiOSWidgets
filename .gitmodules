@@ -1,4 +1,4 @@
-[submodule "TestiOSWidgets/source"]
-	path = TestiOSWidgets/source
-	url = git@github.com:Sitthorn/iOSWidgets.git
+[submodule "TestiOSWidgets/iOSWidget"]
+	path = TestiOSWidgets/iOSWidget
+	url = git@github.com:Sitthorn/TestiOSWidgets.git
 	branch = develop

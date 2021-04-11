@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09FF27412623536A00A7195E /* iOSWidgets in Frameworks */ = {isa = PBXBuildFile; productRef = 09FF27402623536A00A7195E /* iOSWidgets */; };
 		96951EAC2602597100A9E78F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96951EAB2602597100A9E78F /* AppDelegate.swift */; };
 		96951EAE2602597100A9E78F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96951EAD2602597100A9E78F /* SceneDelegate.swift */; };
 		96951EB02602597100A9E78F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96951EAF2602597100A9E78F /* ViewController.swift */; };
@@ -21,7 +22,6 @@
 		AF29663D2608B8D800ED7198 /* PillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29663C2608B8D800ED7198 /* PillsViewController.swift */; };
 		AF92946D26030FC800DB453F /* source in Resources */ = {isa = PBXBuildFile; fileRef = AF92946C26030FC800DB453F /* source */; };
 		AF9294762603159A00DB453F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF9294752603159A00DB453F /* IQKeyboardManagerSwift */; };
-		AF92947926031BE800DB453F /* iOSWidgets in Frameworks */ = {isa = PBXBuildFile; productRef = AF92947826031BE800DB453F /* iOSWidgets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF92947926031BE800DB453F /* iOSWidgets in Frameworks */,
+				09FF27412623536A00A7195E /* iOSWidgets in Frameworks */,
 				AF9294762603159A00DB453F /* IQKeyboardManagerSwift in Frameworks */,
 				96C8351126025C6000703319 /* SDWebImage in Frameworks */,
 				96951F3426025A3100A9E78F /* SkeletonView in Frameworks */,
@@ -118,7 +118,7 @@
 				96951F3326025A3100A9E78F /* SkeletonView */,
 				96C8351026025C6000703319 /* SDWebImage */,
 				AF9294752603159A00DB453F /* IQKeyboardManagerSwift */,
-				AF92947826031BE800DB453F /* iOSWidgets */,
+				09FF27402623536A00A7195E /* iOSWidgets */,
 			);
 			productName = TestiOSWidgets;
 			productReference = 96951EA82602597100A9E78F /* TestiOSWidgets.app */;
@@ -419,6 +419,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		09FF27402623536A00A7195E /* iOSWidgets */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = iOSWidgets;
+		};
 		96951F3326025A3100A9E78F /* SkeletonView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 96951F3226025A3100A9E78F /* XCRemoteSwiftPackageReference "SkeletonView" */;
@@ -433,10 +437,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AF9294742603159A00DB453F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
-		};
-		AF92947826031BE800DB453F /* iOSWidgets */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = iOSWidgets;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
