@@ -704,10 +704,10 @@ Look how you like me now&gt;&gt;&gt;&gt;</string>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Title Capcha"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="helpingText" value="Hello This is Helping Text2"/>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="eye"/>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="actionIcon" value="ChevronDown"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeHoler" value="Optional Na"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="eye"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="countingCharacter" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="inputAccessory" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0c-AL-F9o" customClass="PrimaryTextView" customModule="iOSWidgets">
